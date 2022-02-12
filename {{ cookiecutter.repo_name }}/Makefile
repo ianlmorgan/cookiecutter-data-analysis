@@ -24,8 +24,11 @@ requirements: test_environment
 	$(PYTHON_INTERPRETER) -m pip install -r requirements.txt
 
 ## Make Dataset
-data: requirements
-	$(PYTHON_INTERPRETER) src/data/make_dataset.py data/raw data/processed
+int_data: requirements
+	$(PYTHON_INTERPRETER) src/data/create_int_data.py
+
+pro_data: requirements
+	$(PYTHON_INTERPRETER) src/data/create_pro_data.py
 
 ## Delete all compiled Python files
 clean:
