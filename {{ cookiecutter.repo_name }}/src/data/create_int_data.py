@@ -1,16 +1,13 @@
 # create_int_data.py
 import logging
-from load_data import load_raw_filenames()
+from load_data import load_raw_filenames
 
 def create_int_data(raw_filenames):
     """
-    Takes raw data and processes it into intermediate data.
+    Takes raw data, converts and saves it.
 
     Args:
-        path_to_raw_data (Path): Raw data.
-
-    Returns:
-        int_data ([type]): Intermediate data.
+        raw_filenames: Raw data filenames
     """
     logger = logging.getLogger(__name__)
     # Create intermediate data
@@ -24,4 +21,4 @@ if __name__ == '__main__':
     # load raw data filenames
     raw_filenames = load_raw_filenames()
     # create and save intermediate data
-    create_int_data()
+    create_int_data(raw_filenames)

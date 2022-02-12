@@ -4,11 +4,10 @@ from load_data import load_int_filenames
 
 def create_pro_data(int_filenames):
     """
-    Takes intermediate data, processes it, and saves it.
+    Takes intermediate data, processes and saves it.
 
     Args:
         int_filenames: Intermediate data filenames.
-
     """
     logger = logging.getLogger(__name__)
     # Create intermediate data
@@ -20,6 +19,6 @@ if __name__ == '__main__':
     log_fmt = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
     logging.basicConfig(level=logging.INFO, format=log_fmt)
     # load intermediate data filenames
-    raw_filenames = load_int_filenames()
+    int_filenames = load_int_filenames()
     # create and save processed data
-    create_int_data()
+    create_pro_data(int_filenames)
