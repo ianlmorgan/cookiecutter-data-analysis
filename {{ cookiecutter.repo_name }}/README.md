@@ -6,7 +6,7 @@
 Project Organization
 ------------
 
-    ├── LICENSE             <- {{cookiecutter.open_source_license}} file
+    ├── LICENSE             <- {{cookiecutter.open_source_license}} license file
     ├── Makefile            <- Makefile with commands like `make data` or `make train`
     ├── README.md           <- The top-level README for individuals using this project
     ├── data
