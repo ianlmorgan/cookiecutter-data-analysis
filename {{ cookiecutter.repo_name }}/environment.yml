@@ -1,0 +1,6 @@
+name: {{ cookiecutter.repo_name }}
+dependencies:
+  - matplotlib
+  - numpy
+  - pandas
+  - pathlib
